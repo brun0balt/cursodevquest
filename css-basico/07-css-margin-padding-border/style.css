@@ -1,0 +1,22 @@
+p {
+    margin: 30px 15px;
+    padding: 20px;
+    background-color: cyan;
+    border: 20px solid red;
+}
+
+h1 {
+    border-style: dotted;
+    border-style: dashed;
+    border-style: solid ;
+    border-style: double;
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset;
+    border-style: none;
+    border-style: hidden;
+    
+    border-width: 20px;
+    border-color: cyan;
+}
