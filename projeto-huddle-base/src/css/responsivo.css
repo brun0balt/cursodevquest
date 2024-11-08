@@ -1,0 +1,14 @@
+@media (max-width: 450px) {
+
+    .informations {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btn-register {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
