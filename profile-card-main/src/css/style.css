@@ -1,57 +1,66 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
     background-color: var(--background-color);
-    font-family: Kumbh Sans;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-}
-
-.nft-card {
-    width: 450px;
-    height: 510px;
-    background-color: white;
-    border-radius: 10px;
-    padding-top: 50px;
-}
-
-img {
-    max-width: 100px;
-    border-radius: 100px;
-    margin-left: 180px;
-}
-
-.nome-idade {
-    font-weight: 400;
-    margin: 5px 0px 0px 150px;
-}
-
-.nome-idade span {
-    color: var(--text-color);
-    margin-left: 8px;
-    font-size: 21px;
-}
-
-.city {
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
-    padding-top: 50px;
-    margin: 0px 190px 110px;
 }
 
-.values {
-    border-top: 1px solid lightgrey;
-    padding-top: 70px;
+hr{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    width: 330px;
+    height: 350px;
+}
+
+.card .profile-informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.card .profile-informations img{
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.card .profile-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.profile-numbers .info .counter, 
+.card .profile-informations p{
     font-weight: 700;
-    display: flex;
-    justify-content: space-evenly;
 }
 
-.status {
-    margin-right: 8px;
-    font-weight: 400;
-    display: flex;
-    justify-content: space-evenly;
+.card .profile-informations .age,
+.card .profile-informations .city, 
+.profile-numbers .info .counter-type{
+    color: var(--text-color);
 }
