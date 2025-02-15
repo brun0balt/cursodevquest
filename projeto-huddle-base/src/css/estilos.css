@@ -5,6 +5,7 @@ body {
     font-weight: 400;
     background: url(../images/bg-desktop.svg) center center no-repeat;
     background-color: hsl(257, 40%, 49%);
+    background-size: cover;
 }
 
 .logo {
@@ -60,7 +61,7 @@ body {
     background-color: #fff;
     border-radius: 100px;
     color: hsl(257, 40%, 49%);
-    box-shadow: 1px 1px 15px rgb(49, 49, 49);
+    box-shadow: 0px 5px 10px rgba(0, 0 , 0, 0.3)
 }
 
 .informations .description .btn-register a:hover {

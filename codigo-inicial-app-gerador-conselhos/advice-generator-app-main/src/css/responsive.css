@@ -1,0 +1,38 @@
+@media (max-width: 375px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 15px;
+    }
+
+    .container {
+        padding: 10px 20px;
+        height: 330px;
+        width: 100%;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .container p {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .dice {
+        right: 41.2%;
+    }
+
+    .container h3 {
+        padding-top: 20px;
+    }
+}

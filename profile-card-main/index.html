@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/variables.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Frontend Mentor | Profile card component</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Document</title>
 </head>
+
 <body>
     <main class="container">
-        <div class="card">
-            <div class="profile-informations">
-                <img src="./src/images/image-victor.jpg" alt="Profile picture image">
-                <p>Victor Crest <span class="age">26</span></p>
-                <span class="city">London</span>
-            </div>
-            <hr>
-            <ul class="profile-numbers">
-                <li class="info">
-                    <p class="counter">80K</p>
-                    <span class="counter-type">Followers</sp>
+        <header>
+            <img src="src/images/image-victor.jpg" alt="profile picture" class="profile-img">
+            <h3><strong>Victor Crest</strong><span>26</span></h3>
+            <p>London</p>
+        </header>
+        <footer>
+            <ul class="status-quantity">
+                <li>
+                    <h4>80K</h4>
+                    <p>Followers</p>
                 </li>
-                <li class="info">
-                    <p class="counter">803K</p>
-                    <span class="counter-type">Likes</span>
+                <li>
+                    <h4>803K</h4>
+                    <p>Likes</p>
                 </li>
-                <li class="info">
-                    <p class="counter">1.4K</p>
-                    <span class="counter-type">Photos</span>
+                <li>
+                    <h4>1.4K</h4>
+                    <p>Photos</p>
                 </li>
             </ul>
-        </div>
+        </footer>
+
     </main>
 </body>
+
 </html>

@@ -1,52 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  --texto: hsl(193, 38%, 86%);
+  --botao-do-cart-e-do-texto: hsl(150, 100%, 66%);
+  --card: hsl(217, 19%, 24%);
+  --fundo: hsl(218, 23%, 16%);
+}
+
 body {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 800;
-    background-color: hsl(218, 23%, 16%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: hsl(217, 19%, 24%);
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 450px;
-  }
-  
-  .card .advice-id {
-    color: hsl(150, 100%, 66%);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 15px;
-    margin-top: 30px;
-  }
-  
-  .card .advice-description {
-    font-size: 23px;
-    padding: 23px;
-    text-align: center;
-    color: hsl(193, 38%, 86%);
-  }
-  
-  .card picture img {
-    width: 100%;
-  }
-  
-  .card .advice-update {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: hsl(150, 100%, 66%);
-    transform: translateY(85%);  
-  }
-  .card .advice-update:hover {
-    color: #53FFAB;
-    cursor: pointer;
-    box-shadow: 0 5px 15px hsl(150, 100%, 66%);
-  }
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fundo);
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 370px;
+  background-color: var(--card);
+  border-radius: 20px;
+  padding: 0 60px 0 60px;
+  gap: 20px;
+}
+
+.container h3 {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: var(--botao-do-cart-e-do-texto);
+}
+
+.container p {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--texto);
+}
+
+.container .img1 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.dice {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  background-color: var(--botao-do-cart-e-do-texto);
+  border-radius: 100%;
+  bottom: -7.5%;
+}
+
+.container .img2 {
+  height: 24px;
+  width: 24px;
+}
+
+.dice:hover {
+  box-shadow: 0 1px 40px hsl(150, 100%, 66%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mobile {
+  display: none;
+}
