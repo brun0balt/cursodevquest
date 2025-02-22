@@ -19,26 +19,24 @@
 				Passo 6 - Se o input estiver vazio, removemos a classe campo-preenchido.
 */
 
-const images = document.querySelectorAll(".slide")
-const backArrow = document.getElementById("back-arrow")
-const forwardArrow = document.getElementById("forward-arrow")
-
+const images = document.querySelectorAll(".slide");
+const backArrow = document.getElementById("back-arrow");
+const forwardArrow = document.getElementById("forward-arrow");
 
 let currentImage = 0;
 
-
 forwardArrow.addEventListener("click", function () {
-  if (currentImage === images.lenght -1) {
+  if (currentImage === images.lenght - 1) {
     return;
   }
 
-hideOpenImage();
+  hideOpenImage();
 
-currentImage++;
+  currentImage++;
 
-images[currentImage].classList.add("show");
+  images[currentImage].classList.add("show");
 
-showOrHideArrows();
+  showOrHideArrows();
 });
 
 function hideOpenImage() {
@@ -47,18 +45,17 @@ function hideOpenImage() {
 }
 
 function showOrHideArrows() {
-  const notTheFirstImage = currentImage !==0;
+  const notTheFirstImage = currentImage !== 0;
   if (notTheFirstImage) {
     backArrow.classList.remove("opacity");
   } else {
-    backArrow.classList.add("opacity")
+    backArrow.classList.add("opacity");
   }
 }
 
-const lastImage = currentImage !== 0 && currentImage === images.lenght -1;
-  if (lastImage) {
-    forwardArrow.classList.remove("opacity");
-  } else {
-    forwardArrow.classList.add("opacity")
-  }
+const lastImage = currentImage !== 0 && currentImage === images.lenght - 1;
+if (lastImage) {
+  forwardArrow.classList.remove("opacity");
+} else {
+  forwardArrow.classList.add("opacity");
 }
